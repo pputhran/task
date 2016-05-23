@@ -1,6 +1,6 @@
 
 ### Reference Architecture
 
-![](reference-architecture.png)
+![](Architecture.png)
 =======
 
