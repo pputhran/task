@@ -29,6 +29,10 @@ To run the test (integration),
 
 ``npm run test``
 
+### POSTMAN ,
+
+``Please import the api.postman_collection.json into POSTMAN``
+
 ### Reference Architecture
 
 ![](architecture.png)
