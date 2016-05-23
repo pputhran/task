@@ -1,0 +1,5 @@
+{
+  "project": "playabl",
+  "region": "eu-west-1",
+  "mongodb":"mongodb://playabl:playabl@ds011382.mlab.com:11382/playabl"
+}

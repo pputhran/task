@@ -1,0 +1,5 @@
+{
+  "apiRequestTemplate": {
+    "matchID": "$input.params('matchID')"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "body":{
+    "mdate": "25/06/2018",
+    "koTime": "14:00",
+    "competitionID": "750",
+    "stageNumber": "2",
+    "stageType": "ddd",
+    "roundNumber": "1",
+    "roundText": "Round Of 16",
+    "leg": "1",
+    "homeTeamID": "8161",
+    "homeText": "Runner-up Group A",
+    "awayTeamID": "8165",
+    "awayText": "Runner-up Group C",
+    "venueID": "468",
+    "venueText": "Geoffroy-Guichard",
+    "referee": null
+  }
+}

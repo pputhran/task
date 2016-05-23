@@ -1,0 +1,5 @@
+{
+  "apiRequestTemplate": {
+    "body": "$input.json('$')"
+  }
+}

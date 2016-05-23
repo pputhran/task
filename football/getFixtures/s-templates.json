@@ -1,0 +1,5 @@
+{
+  "apiRequestTemplate": {
+    "competitionID": "$input.params('competitionID')"
+  }
+}

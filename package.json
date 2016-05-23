@@ -1,0 +1,25 @@
+{
+  "name": "playabl",
+  "version": "0.0.1",
+  "description": "A Serverless Project and its Serverless Plugin dependencies.",
+  "author": "me",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "env STAGE=dev env REGION=eu-west-1 ./node_modules/.bin/mocha -t 60000 --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.3.14",
+    "bluebird": "^3.4.0",
+    "co": "^4.6.0",
+    "mongodb": "^2.1.19"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}

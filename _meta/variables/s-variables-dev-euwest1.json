@@ -1,0 +1,7 @@
+{
+  "region": "eu-west-1",
+  "resourcesStackName": "playabl-dev-r",
+  "iamRoleArnLambda": "arn:aws:iam::885202755125:role/playabl-dev-r-IamRoleLambda-L6RW09YHZQLW",
+  "apiGatewayApi": "playabl",
+  "mongodb":"mongodb://playabl:playabl@ds011382.mlab.com:11382/playabl"
+}

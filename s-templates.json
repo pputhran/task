@@ -1,0 +1,48 @@
+{
+  "apiRequestTemplate": {
+    "httpMethod": "$context.httpMethod",
+    "body": "$input.json('$')",
+    "queryParams": "$input.params().querystring",
+    "headerParams": "$input.params().header",
+    "headerParamNames": "$input.params().header.keySet()",
+    "contentTypeValue": "$input.params().header.get('Content-Type')"
+  },
+  "400Response": {
+    "statusCode": "400",
+    "responseTemplates": {
+      "application/json": "$input.path('$.errorMessage')"
+    }
+  },
+  "403Response": {
+    "statusCode": "403",
+    "responseTemplates": {
+      "application/json": "$input.path('$.errorMessage')"
+    }
+  },
+  "404Response": {
+    "statusCode": "404",
+    "responseTemplates": {
+      "application/json": "$input.path('$.errorMessage')"
+    }
+  },
+  "410Response": {
+    "statusCode": "410",
+    "responseTemplates": {
+      "application/json": "$input.path('$.errorMessage')"
+    }
+  },
+  "500Response": {
+    "statusCode": "500",
+    "responseTemplates": {
+      "application/json": "$input.path('$.errorMessage')"
+    }
+  },
+  "200Response": {
+    "statusCode": "200",
+    "responseParameters": {},
+    "responseModels": {},
+    "responseTemplates": {
+      "application/json": ""
+    }
+  }
+}

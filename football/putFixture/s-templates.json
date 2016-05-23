@@ -1,0 +1,6 @@
+{
+  "apiRequestTemplate": {
+    "body": "$input.json('$')",
+    "matchID": "$input.params('matchID')"
+  }
+}

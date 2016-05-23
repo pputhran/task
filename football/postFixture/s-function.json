@@ -1,0 +1,46 @@
+{
+  "name": "postFixtures",
+  "runtime": "nodejs4.3",
+  "description": "Serverless Lambda function for project: playabl",
+  "customName": false,
+  "customRole": false,
+  "handler": "football/postFixture/handler.handler",
+  "timeout": 6,
+  "memorySize": 128,
+  "authorizer": {},
+  "custom": {
+    "excludePatterns": []
+  },
+  "endpoints": [
+    {
+      "path": "/football/fixture",
+      "method": "POST",
+      "type": "AWS",
+      "authorizationType": "none",
+      "authorizerFunction": false,
+      "apiKeyRequired": false,
+      "requestParameters": {},
+      "requestTemplates": {
+        "application/json": "$${apiRequestTemplate}"
+      },
+      "responses": {
+        ".*\"status\":400.*": "$${400Response}",
+        ".*\"status\":403.*": "$${403Response}",
+        ".*\"status\":404.*": "$${404Response}",
+        ".*\"status\":410.*": "$${410Response}",
+        ".*\"status\":500.*": "$${500Response}",
+        "default": "$${200Response}"
+      }
+    }
+  ],
+  "events": [],
+  "environment": {
+    "SERVERLESS_PROJECT": "${project}",
+    "SERVERLESS_STAGE": "${stage}",
+    "SERVERLESS_REGION": "${region}"
+  },
+  "vpc": {
+    "securityGroupIds": [],
+    "subnetIds": []
+  }
+}
